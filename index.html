@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="台灣醫材 QMS 稽核由誰執行、是否隨機、SGS 與 BSI 的身分、政府端能否核發 ISO 13485、醫材取證三層許可——以官方一手來源逐條查證（查證日期 2026-10-13）。">
-<title>台灣醫材取證查證：稽核審查單位與證照體系｜2026-10-13</title>
+<meta name="description" content="台灣醫療器材上市要拿哪些證照與許可、各由誰核准與查核、流程怎麼走，以及哪些許可以公司為單位、哪些以產品為單位——依《醫療器材管理法》及主管機關公告整理（查證日期 2026-10-13）。">
+<title>台灣醫療器材上市：證照與許可速查表｜2026-10-13</title>
 <style>
 :root{
   --ink:#16213a;--ink-2:#3b4660;--muted:#69728a;--line:#dcd8cc;--paper:#faf8f3;--card:#ffffff;
@@ -21,14 +21,18 @@ a{color:var(--blue)}
 header.hero{background:var(--ink);color:#f4f1e8;padding:44px 0 36px;border-bottom:6px solid var(--accent)}
 .eyebrow{font-size:13px;letter-spacing:.12em;color:#b9c3d8;margin:0 0 10px}
 h1{font-family:var(--serif);font-size:clamp(26px,4.6vw,40px);line-height:1.3;margin:0 0 18px;font-weight:700}
-.lead{font-size:clamp(16px,2.2vw,19px);line-height:1.8;margin:0 0 26px;color:#ece8dc;max-width:900px}
+.lead{font-size:clamp(16px,2.2vw,19px);line-height:1.85;margin:0 0 26px;color:#ece8dc;max-width:900px}
 .lead strong{color:#fff;background:rgba(31,111,92,.55);padding:0 4px;border-radius:3px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:0 0 24px}
+.tier{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:16px 16px 14px}
+.tier .k{font-size:12px;font-weight:700;letter-spacing:.1em;color:#8fd8c4}
+.tier .nm{font-family:var(--serif);font-size:18px;font-weight:700;color:#fff;margin:4px 0 6px;line-height:1.45}
+.tier .dt{font-size:13.5px;color:#cfd6e6;line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px}
 .card-num{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:14px 14px 12px}
 .card-num .n{font-family:var(--serif);font-size:30px;font-weight:700;line-height:1.1;color:#fff}
 .card-num .n small{font-size:15px;font-weight:600}
 .card-num .t{font-size:13px;line-height:1.5;color:#cfd6e6;margin-top:6px}
-.card-num .s{font-size:11px;color:#9aa6c0;margin-top:4px}
 nav.toc{position:sticky;top:0;z-index:5;background:rgba(250,248,243,.96);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(4px)}
 nav.toc ul{list-style:none;margin:0 auto;padding:10px 20px;display:flex;gap:6px;overflow-x:auto;max-width:1040px;white-space:nowrap;scrollbar-width:thin}
 nav.toc a{display:inline-block;text-decoration:none;color:var(--ink-2);font-size:14px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:#fff}
@@ -40,382 +44,384 @@ h2 .no{display:inline-block;min-width:1.9em;color:var(--accent)}
 h3{font-size:19px;margin:26px 0 8px;line-height:1.5}
 p{margin:0 0 12px}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:12px 0 18px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
-table{border-collapse:collapse;width:100%;min-width:760px;font-size:15px}
-table.narrow{min-width:560px}
+table{border-collapse:collapse;width:100%;min-width:820px;font-size:15px}
+table.narrow{min-width:620px}
 th,td{border-bottom:1px solid #ebe7dc;padding:11px 12px;text-align:left;vertical-align:top}
 th{background:#f1eee5;font-weight:700;color:var(--ink);font-size:14px;white-space:nowrap}
 tr:last-child td{border-bottom:none}
 td.c{white-space:nowrap}
+tbody tr:hover{background:#fcfbf7}
 .badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap;line-height:1.6}
 .ok{background:var(--accent-bg);color:var(--accent)}
-.gap{background:var(--warn-bg);color:var(--warn)}
 .diff{background:var(--blue-bg);color:var(--blue)}
-.nf{background:var(--miss-bg);color:var(--miss)}
-.cite{font-size:12px;font-weight:700;text-decoration:none;color:var(--blue);background:var(--blue-bg);border-radius:4px;padding:0 4px;margin:0 1px;white-space:nowrap;vertical-align:1px}
-.cite:hover{background:var(--blue);color:#fff}
-.q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 10px;margin:0 0 22px}
-.q h3{margin-top:0;font-family:var(--serif);font-size:21px}
-.q h3 .tag{font-family:var(--sans);font-size:13px;color:#fff;background:var(--ink);border-radius:6px;padding:2px 8px;margin-right:8px;vertical-align:3px}
 .verdict{border-left:5px solid var(--accent);background:var(--accent-bg);padding:12px 16px;border-radius:0 8px 8px 0;margin:6px 0 16px;font-size:16.5px}
 .verdict b{color:var(--accent)}
-.note{border-left:4px solid var(--warn);background:var(--warn-bg);padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0 14px;font-size:15px}
-.miss{border-left:4px solid var(--miss);background:var(--miss-bg);padding:10px 14px;border-radius:0 8px 8px 0;margin:10px 0 14px;font-size:15px}
-blockquote{margin:8px 0 14px;padding:10px 16px;border-left:3px solid #b8b2a2;background:#f5f2ea;color:var(--ink-2);font-size:15px;border-radius:0 6px 6px 0}
-ul.dots{margin:6px 0 14px;padding-left:1.3em}
-ul.dots li{margin:4px 0}
-.tl{position:relative;margin:10px 0 10px;padding-left:28px}
-.tl:before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:#cfc9b8}
-.tl .it{position:relative;margin:0 0 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-.tl .it:before{content:"";position:absolute;left:-25px;top:16px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--accent)}
-.tl .it.hl:before{background:var(--accent)}
-.tl .d{font-family:var(--serif);font-weight:700;font-size:16px;color:var(--accent)}
-.tl .w{margin-top:2px}
-.tl .m{font-size:14px;color:var(--muted);margin-top:4px}
-.flow{display:grid;grid-template-columns:1fr;gap:0;margin:14px 0 18px;max-width:760px}
+.note{border-left:4px solid var(--warn);background:var(--warn-bg);padding:12px 16px;border-radius:0 8px 8px 0;margin:12px 0 14px;font-size:15px}
+.note b{color:var(--warn)}
+.tip{border-left:4px solid var(--blue);background:var(--blue-bg);padding:12px 16px;border-radius:0 8px 8px 0;margin:12px 0 14px;font-size:15px}
+.flow{display:grid;grid-template-columns:1fr;gap:0;margin:14px 0 18px;max-width:780px}
 .box{background:var(--card);border:2px solid var(--ink);border-radius:12px;padding:14px 16px}
 .box .lv{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--muted)}
 .box .nm{font-family:var(--serif);font-size:19px;font-weight:700;margin:2px 0 4px}
 .box .dt{font-size:14px;color:var(--ink-2)}
 .box.opt{border-style:dashed;border-color:#8a90a2;background:#fbfbfd}
+.box.who{border-color:var(--accent);background:var(--accent-bg)}
 .arrow{display:flex;align-items:center;gap:10px;padding:8px 0 8px 22px;font-size:14px;color:var(--ink-2)}
 .arrow svg{flex:0 0 auto}
 .arrow b{color:var(--accent)}
-.checklist{counter-reset:c;list-style:none;padding:0;margin:8px 0 14px}
-.checklist li{counter-increment:c;position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px 12px 52px;margin:0 0 10px}
-.checklist li:before{content:counter(c);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}
-.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px;font-size:13px;color:var(--muted)}
+ul.dots{margin:6px 0 14px;padding-left:1.3em}
+ul.dots li{margin:5px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0 18px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.panel h4{margin:0 0 10px;font-size:16px;font-family:var(--serif)}
+.panel ul{margin:0;padding-left:1.2em;font-size:14.5px}
+.panel li{margin:5px 0}
+.panel.co{border-top:4px solid var(--accent)}
+.panel.pr{border-top:4px solid var(--blue)}
 ol.src{padding-left:0;list-style:none;margin:8px 0 0}
-ol.src li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:0 0 8px;font-size:14.5px;line-height:1.65;scroll-margin-top:64px}
-ol.src li:target{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-bg)}
+ol.src li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:0 0 8px;font-size:14.5px;line-height:1.65}
 ol.src .id{font-weight:700;color:var(--blue);margin-right:6px}
 ol.src .lvl{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-left:4px;white-space:nowrap}
 ol.src .url{display:block;font-size:13px;word-break:break-all;margin-top:2px}
-ol.src .sup{display:block;font-size:13.5px;color:var(--ink-2);margin-top:3px}
 footer{margin-top:40px;background:var(--ink);color:#d9deea;padding:28px 0 36px;font-size:14px;line-height:1.8}
 footer b{color:#fff}
 footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
-.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92em}
 .mhint{display:none;font-size:13px;color:var(--warn)}
-@media (max-width:800px){.mhint{display:inline}}
+@media (max-width:820px){.mhint{display:block}.grid2{grid-template-columns:1fr}}
 @media (max-width:640px){
   body{font-size:15.5px}
   .wrap{padding:0 16px}
   header.hero{padding:32px 0 26px}
-  .q{padding:18px 16px 6px}
   .card-num .n{font-size:26px}
 }
-@media print{nav.toc{display:none}header.hero,footer{background:#fff;color:#000}.card-num{border-color:#999}.card-num .n,.card-num .t{color:#000}}
+@media print{nav.toc{display:none}header.hero,footer{background:#fff;color:#000}.card-num,.tier{border-color:#999}.card-num .n,.card-num .t,.tier .nm,.tier .dt,.lead{color:#000}}
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="wrap">
-    <p class="eyebrow">法規查證報告 ・ 查證日期 2026-10-13 ・ 以官方一手來源為準</p>
-    <h1>台灣醫材取證：<br>稽核審查單位與證照體系查證</h1>
-    <p class="lead">一句話結論：台灣醫材製造廠的 QMS 稽核，是<strong>食藥署派案</strong>給（或由食藥署承辦人員自行執行）<strong>4 家財團法人受託機構</strong>之一——不是 3 家，官方文件也沒寫「隨機抽籤」；這 4 家<strong>不核發 ISO 13485 證書</strong>，食藥署核發的是「醫療器材製造許可」；<strong>SGS、BSI 不在這 4 家名單</strong>，兩者曾同列 2013–2021 年「臺歐 TCP II」的歐盟合作機構，現行 TCP III 只剩 BSI（荷蘭實體）在列。</p>
+    <p class="eyebrow">法規資訊整理 ・ 查證日期 2026-10-13 ・ 依主管機關公告為準</p>
+    <h1>台灣醫療器材上市：<br>證照與許可速查表</h1>
+    <p class="lead">一家公司要把一項醫療器材在台灣上市，要拿的<strong>不是一張證，而是三個層次</strong>：公司／場所層的醫療器材商許可執照、品質系統層的醫療器材製造許可、產品層的醫療器材許可證或登錄。而常聽到的 <strong>ISO 13485 是自願性的第三方驗證，不是法定許可</strong>。</p>
+
+    <div class="tiers">
+      <div class="tier">
+        <div class="k">層次 ① 公司／場所</div>
+        <div class="nm">醫療器材商許可執照<br>＋ 工廠登記</div>
+        <div class="dt">由直轄市、縣（市）政府衛生局核發；每一個場所各別辦理</div>
+      </div>
+      <div class="tier">
+        <div class="k">層次 ② 品質系統</div>
+        <div class="nm">醫療器材製造許可<br>（QMS 檢查合格）</div>
+        <div class="dt">由食藥署核發；以製造廠為單位，效期 3 年</div>
+      </div>
+      <div class="tier">
+        <div class="k">層次 ③ 產品</div>
+        <div class="nm">醫療器材許可證<br>或 醫療器材登錄</div>
+        <div class="dt">由食藥署核發；以產品為單位，許可證最長 5 年</div>
+      </div>
+    </div>
+
     <div class="cards">
-      <div class="card-num"><div class="n">4 <small>家</small></div><div class="t">現行食藥署受託查核（評鑑）機構</div><div class="s">S06・S09</div></div>
-      <div class="card-num"><div class="n">3 <small>家</small></div><div class="t">2004 年官方文件記載家數（當時不含塑膠中心）</div><div class="s">S19</div></div>
-      <div class="card-num"><div class="n">3 <small>年</small></div><div class="t">醫療器材製造許可（QMS）效期</div><div class="s">S02 第6條</div></div>
-      <div class="card-num"><div class="n">6萬<small>／</small>3萬</div><div class="t">國內 QMS 檢查規費（標準／精要模式，新臺幣）</div><div class="s">S05</div></div>
-      <div class="card-num"><div class="n">2 <small>個月</small></div><div class="t">不予核定後申請複評期限，以 1 次為限</div><div class="s">S02 第3條</div></div>
-      <div class="card-num"><div class="n">10 <small>家</small></div><div class="t">現行 TCP III 歐盟公告機構（BSI 在列、SGS 不在）</div><div class="s">S09</div></div>
-      <div class="card-num"><div class="n">5 <small>年</small></div><div class="t">醫療器材許可證最長效期</div><div class="s">S01 第27條</div></div>
+      <div class="card-num"><div class="n">3 <small>年</small></div><div class="t">醫療器材製造許可（QMS）效期</div></div>
+      <div class="card-num"><div class="n">3 <small>年</small></div><div class="t">醫療器材運銷許可（GDP）效期</div></div>
+      <div class="card-num"><div class="n">5 <small>年</small></div><div class="t">醫療器材許可證最長效期</div></div>
+      <div class="card-num"><div class="n">4 <small>家</small></div><div class="t">受食藥署委託執行 QMS 稽查的財團法人</div></div>
+      <div class="card-num"><div class="n">6萬<small>／</small>3萬</div><div class="t">QMS 檢查規費（標準／精要模式，新臺幣）</div></div>
     </div>
   </div>
 </header>
 
-<nav class="toc" aria-label="本頁目錄">
+<nav class="toc">
   <ul>
-    <li><a href="#compare">對照表</a></li>
-    <li><a href="#q1">Q1 誰稽核</a></li>
-    <li><a href="#q2">Q2 隨機？</a></li>
-    <li><a href="#q3">Q3 幾家</a></li>
-    <li><a href="#q4">Q4 SGS／BSI</a></li>
-    <li><a href="#q5">Q5 能發 13485？</a></li>
-    <li><a href="#q6">Q6 取證三層</a></li>
-    <li><a href="#timeline">沿革</a></li>
-    <li><a href="#roles">名單與角色</a></li>
-    <li><a href="#confirm">待確認</a></li>
-    <li><a href="#limits">查無</a></li>
-    <li><a href="#sources">資料來源</a></li>
+    <li><a href="#certs">01 要拿哪些證照</a></li>
+    <li><a href="#who">02 誰核准、誰查核</a></li>
+    <li><a href="#flow">03 流程</a></li>
+    <li><a href="#unit">04 公司 vs 產品為單位</a></li>
+    <li><a href="#iso">05 ISO 13485 的角色</a></li>
+    <li><a href="#sources">06 資料來源</a></li>
   </ul>
 </nav>
 
 <main class="wrap">
 
-<section id="compare">
-  <h2><span class="no">01</span>馬哥說法 vs 官方依據</h2>
-  <p class="sub">兩邊並陳、交代沿革，不判定對錯。標示「推測」者為本頁推論，需再確認。</p>
-  <div class="legend"><span class="badge ok">一致</span><span class="badge gap">部分一致／有沿革落差</span><span class="badge diff">身分不同</span><span class="mhint">← 本頁表格可左右滑動 →</span></div>
+<!-- ============ 01 ============ -->
+<section id="certs">
+  <h2><span class="no">01</span>要拿哪些證照／許可？</h2>
+  <p class="sub">一家公司要把一項醫療器材在台灣上市，總共會碰到下列證照與許可。</p>
+  <p class="mhint">↔ 手機上可左右滑動表格</p>
   <div class="tw">
-  <table>
-    <thead><tr><th>#</th><th>馬哥說法（口述）</th><th>官方依據（現行）</th><th>落差與可能原因</th></tr></thead>
-    <tbody>
-      <tr><td class="c">1<br><span class="badge gap">家數不同</span></td><td>政府有「三家」醫材稽核審查單位</td><td>現行 <b>4 家</b>受託機構：財團法人工業技術研究院量測技術發展中心、財團法人金屬工業研究發展中心、財團法人台灣商品檢測驗證中心、財團法人塑膠工業技術發展中心 <a class="cite" href="#s06">S06</a><a class="cite" href="#s09">S09</a></td><td>2004 年官方文件記載確為 <b>3 家</b>，但當時是金屬中心、台灣電子檢驗中心、工研院量測中心，<b>不含塑膠中心</b> <a class="cite" href="#s19">S19</a>；至遲 2013 年已是含塑膠中心的 4 家 <a class="cite" href="#s14">S14</a>。<br><b>推測：</b>可能記得 4 家中的 3 家，或把早期「三家」的家數與現行名單混用——待確認。</td></tr>
-      <tr><td class="c">2<br><span class="badge ok">一致</span></td><td>其中兩家是「塑膠中心」「金屬中心」</td><td>全名：<b>財團法人塑膠工業技術發展中心</b>、<b>財團法人金屬工業研究發展中心</b>，兩者皆在現行名單 <a class="cite" href="#s06">S06</a><a class="cite" href="#s09">S09</a></td><td>一致。補充：兩者是<b>財團法人</b>、受食藥署委託，不是政府機關本身 <a class="cite" href="#s03">S03</a></td></tr>
-      <tr><td class="c">3<br><span class="badge gap">用語不同</span></td><td>送件後「從這幾家隨機抽一家」來稽核</td><td>官方用語是食藥署「<b>派案</b>」「<b>案件分派</b>」「<b>指派</b>」；案件也可能派給<b>食藥署承辦人員</b>自己 <a class="cite" href="#s07">S07</a><a class="cite" href="#s06">S06</a></td><td>「業者自己不能挑」與官方流程相符（官方文件未見業者指定機構之程序）。但「隨機」不是官方用語，派案準則未公開【查無】。法規中「隨機」只用在<b>產品取樣</b> <a class="cite" href="#s02">S02</a></td></tr>
-      <tr><td class="c">4<br><span class="badge diff">身分不同</span></td><td>SGS 是其中一家</td><td>SGS <b>不在</b> 4 家受託機構名單 <a class="cite" href="#s09">S09</a>。SGS United Kingdom Limited（NB 0120）曾列 <b>TCP II（2013–2021）</b>「歐盟代施查核機構」<a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a>；<b>現行 TCP III 10 家無 SGS</b> <a class="cite" href="#s09">S09</a></td><td><b>推測：</b>可能來自 TCP II 時期資訊——當時官方公告確實稱 BSI、SGS UK 為「歐盟<b>代施查核機構</b>」，與國內 4 家用語相近 <a class="cite" href="#s14">S14</a>。另 SGS 台灣是民間驗證公司，自述提供 ISO 13485 驗證 <a class="cite" href="#s27">S27</a></td></tr>
-      <tr><td class="c">5<br><span class="badge diff">身分不同</span></td><td>BSI 是其中一家</td><td>BSI <b>不在</b> 4 家受託機構名單 <a class="cite" href="#s09">S09</a>。BSI（NB 0086，英國）曾列 TCP II <a class="cite" href="#s14">S14</a>；<b>BSI Group The Netherlands B.V.（NB 2797）自 2022-09-02 起列 TCP III</b>，為現行 10 家之一 <a class="cite" href="#s11">S11</a><a class="cite" href="#s09">S09</a></td><td>BSI 是<b>歐盟公告機構（TCP III 合作夥伴）</b>＋民間 ISO 13485 驗證機構（自述）<a class="cite" href="#s26">S26</a>，不是食藥署派案的國內受託機構。</td></tr>
-      <tr><td class="c">6<br><span class="badge gap">概念相近</span></td><td>稽核是針對「醫材證（ISO 13485）」做審查</td><td>食藥署檢查依據是「<b>醫療器材品質管理系統準則</b>」，該準則<b>參照 ISO 13485:2016</b> 訂定 <a class="cite" href="#s06">S06</a>；檢查合格核發「<b>醫療器材製造許可</b>」<a class="cite" href="#s02">S02</a></td><td>內容高度相近、法律上是兩件事：政府檢的是 QMS 準則符合性，不是審查手上的 ISO 13485 證書。</td></tr>
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr><th>#</th><th>層次</th><th>名稱</th><th>以什麼為單位</th><th>核發單位</th><th>效期</th><th>性質</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="c">1</td><td class="c">公司／場所</td>
+          <td><b>醫療器材商許可執照（製造業）</b></td>
+          <td><span class="badge diff">公司</span><br>每一個製造場所各別辦理登記</td>
+          <td>直轄市、縣（市）政府衛生局</td><td>法未明定</td><td>必備</td>
+        </tr>
+        <tr>
+          <td class="c">2</td><td class="c">公司／場所</td>
+          <td><b>工廠登記</b></td>
+          <td><span class="badge diff">公司</span><br>每一個廠址</td>
+          <td>直轄市、縣（市）政府</td><td>法未明定</td><td>必備（免辦理工廠登記者除外）</td>
+        </tr>
+        <tr>
+          <td class="c">3</td><td class="c">公司／場所</td>
+          <td><b>醫療器材商許可執照（販賣業）</b></td>
+          <td><span class="badge diff">公司</span><br>每一個營業處所各別辦理登記</td>
+          <td>直轄市、縣（市）政府衛生局</td><td>法未明定</td><td>必備（自製自售、藥局、醫事機構等有例外）</td>
+        </tr>
+        <tr>
+          <td class="c">4</td><td class="c">品質系統</td>
+          <td><b>醫療器材製造許可</b>（QMS 檢查合格）</td>
+          <td><span class="badge diff">公司</span><br>以<b>製造廠</b>為單位；證上載明「許可項目及作業內容」</td>
+          <td>食藥署</td>
+          <td><b>3 年</b><br>期滿前 6–12 個月申請展延</td>
+          <td>必備（公告免取得品項除外）</td>
+        </tr>
+        <tr>
+          <td class="c">5</td><td class="c">品質系統<br>（輸入）</td>
+          <td><b>QSD</b>（國外製造廠品質系統）</td>
+          <td><span class="badge diff">國外製造廠</span><br>由代理輸入之醫療器材商申請</td>
+          <td>食藥署</td><td>準用 3 年</td><td>必備</td>
+        </tr>
+        <tr>
+          <td class="c">6</td><td class="c">運銷</td>
+          <td><b>醫療器材運銷許可</b>（GDP）</td>
+          <td><span class="badge diff">公司</span><br>以販賣業者為單位；證上載明貯存場所</td>
+          <td>食藥署</td><td><b>3 年</b></td><td>公告品項之販賣業者必備</td>
+        </tr>
+        <tr>
+          <td class="c">7</td><td class="c">產品</td>
+          <td><b>醫療器材許可證</b>（查驗登記）</td>
+          <td><span class="badge ok">產品</span><br>一個品項一張</td>
+          <td>食藥署</td><td><b>最長 5 年</b></td><td>必備（公告得以登錄方式為之者除外）</td>
+        </tr>
+        <tr>
+          <td class="c">8</td><td class="c">產品</td>
+          <td><b>醫療器材登錄</b></td>
+          <td><span class="badge ok">產品</span><br>依品項</td>
+          <td>食藥署</td><td>每年 10 月辦理年度申報</td><td>公告品項適用</td>
+        </tr>
+        <tr>
+          <td class="c">9</td><td class="c">自願</td>
+          <td><b>ISO 13485 證書</b></td>
+          <td><span class="badge diff">公司／品質系統</span></td>
+          <td>民間驗證機構（SGS、BSI 等）</td><td>依驗證機構規定</td><td>自願（客戶或外銷市場要求）</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <p><b>QMS 檢查規費</b>：標準模式新臺幣 6 萬元／精要模式 3 萬元。　<b>複評</b>：檢查未符合者，通知送達日起 2 個月內得申請複評，以 1 次為限。</p>
 </section>
 
-<section id="q1">
-  <h2><span class="no">02</span>逐題回答</h2>
-  <p class="sub">每條結論後方的藍色標籤可跳到對應來源（含網址）。</p>
-
-  <div class="q">
-    <h3><span class="tag">Q1</span>台灣政府有哪些醫材稽核審查單位？由誰執行稽核？</h3>
-    <div class="verdict"><b>結論：</b>國內醫材製造廠的 QMS 檢查「由食品藥物管理署會同受託評鑑機構執行」，目前指定 4 家 <a class="cite" href="#s06">S06</a>；113/8/9 衛福部公告稱「本部食品藥物管理署4家醫療器材受託查核機構」<a class="cite" href="#s09">S09</a>。</div>
-    <div class="tw">
+<!-- ============ 02 ============ -->
+<section id="who">
+  <h2><span class="no">02</span>核准與查核單位是誰？</h2>
+  <p class="sub">同一件事，核准的機關和實際來查的單位不一定同一個。</p>
+  <div class="tw">
     <table class="narrow">
-      <thead><tr><th>#</th><th>全名</th><th>常用簡稱</th></tr></thead>
+      <thead><tr><th>角色</th><th>單位</th><th>負責什麼</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td>財團法人工業技術研究院量測技術發展中心</td><td>工研院量測中心</td></tr>
-        <tr><td>2</td><td>財團法人金屬工業研究發展中心</td><td>金屬中心</td></tr>
-        <tr><td>3</td><td>財團法人台灣商品檢測驗證中心</td><td>商檢中心（舊名：台灣電子檢驗中心）</td></tr>
-        <tr><td>4</td><td>財團法人塑膠工業技術發展中心</td><td>塑膠中心</td></tr>
+        <tr>
+          <td class="c"><b>中央主管機關</b></td>
+          <td>衛生福利部食品藥物管理署（食藥署）</td>
+          <td>核發 <b>醫療器材製造許可</b>、<b>運銷許可</b>、<b>醫療器材許可證</b>及<b>登錄</b>；受理查驗登記</td>
+        </tr>
+        <tr>
+          <td class="c"><b>地方主管機關</b></td>
+          <td>直轄市、縣（市）政府<b>衛生局</b></td>
+          <td>核發 <b>醫療器材商許可執照</b>（製造業／販賣業）</td>
+        </tr>
+        <tr>
+          <td class="c"><b>地方主管機關</b></td>
+          <td>直轄市、縣（市）政府（經發／產業發展局）</td>
+          <td><b>工廠登記</b></td>
+        </tr>
+        <tr>
+          <td class="c"><b>受託查核機構</b><br>（4 家財團法人）</td>
+          <td>
+            ① 財團法人工業技術研究院量測技術發展中心<br>
+            ② 財團法人金屬工業研究發展中心<br>
+            ③ 財團法人台灣商品檢測驗證中心<span style="color:#69728a">（舊名：台灣電子檢驗中心）</span><br>
+            ④ 財團法人塑膠工業技術發展中心
+          </td>
+          <td>受食藥署<b>派案</b>執行 QMS 實地稽查、撰寫稽查報告；<b>最終核定仍由食藥署為之</b></td>
+        </tr>
+        <tr>
+          <td class="c"><b>民間驗證機構</b></td>
+          <td>SGS、BSI、TÜV、DNV 等</td>
+          <td>核發 <b>ISO 13485 等自願性驗證</b>證書</td>
+        </tr>
+        <tr>
+          <td class="c"><b>認證機構</b></td>
+          <td>財團法人全國認證基金會（TAF）</td>
+          <td><b>認證「驗證機構」本身</b>（不核發 ISO 13485 證書）</td>
+        </tr>
+        <tr>
+          <td class="c"><b>法規輔導</b></td>
+          <td>財團法人醫藥品查驗中心（CDE）</td>
+          <td>法規諮詢、查驗登記輔導</td>
+        </tr>
       </tbody>
     </table>
-    </div>
-    <ul class="dots">
-      <li><b>觸發點是「QMS 檢查／製造許可」申請，不是許可證申請本身。</b>製造業者依《醫療器材管理法》第22條建立 QMS，「報中央主管機關檢查合格取得製造許可後，始得製造」<a class="cite" href="#s01">S01</a><a class="cite" href="#s02">S02</a>。產品許可證（查驗登記）是另一條線（見 Q6）。</li>
-      <li><b>最終核定者是食藥署。</b>受託機構稽查、撰寫稽查報告；食藥署複審複核後核發函文 <a class="cite" href="#s07">S07</a>；製造許可由中央主管機關核發 <a class="cite" href="#s02">S02</a>。</li>
-      <li><b>它們是受託的財團法人。</b>委託機關（構）以行政契約約定權利義務；委託法人或團體須先申請認證 <a class="cite" href="#s03">S03</a>。</li>
-    </ul>
-    <div class="note"><b>新制動態（2026-05-08）：</b>食藥署公告「醫療器材商檢查受託機構認證作業程序」，自公告日起受理認證申請；申請資格含「政府機關(構)、經政府合法登記之機構、法人或團體」，須符合 ISO 17021-1 與 IMDRF 規範，認證效期 3 年，取得認證後須依食藥署採購案投標、簽約後始得執行檢查 <a class="cite" href="#s18">S18</a>。查證日止，食藥署公告資訊未見新增受託機構之認證公告【查無】，現行仍為上列 4 家 <a class="cite" href="#s06">S06</a>。</div>
   </div>
 
-  <div class="q" id="q2">
-    <h3><span class="tag">Q2</span>「隨機抽一家」在官方文件上怎麼寫？業者可以指定嗎？</h3>
-    <div class="verdict"><b>結論：</b>官方寫的是<b>食藥署派案／分派／指派</b>，不是「隨機抽籤」；官方文件<b>未提供業者指定受託機構的程序</b>；派案依據未公開【查無】。</div>
-    <div class="tw">
-    <table>
-      <thead><tr><th>官方文件</th><th>原文</th></tr></thead>
-      <tbody>
-        <tr><td>QMS 申請須知 八(一)1 <a class="cite" href="#s07">S07</a></td><td>「食藥署收件後，派案至承辦人員(食藥署)或受託機構。」</td></tr>
-        <tr><td>QMS 申請須知 作業流程圖 <a class="cite" href="#s07">S07</a></td><td>食藥署欄「案件分派發文」→ 承辦人員或受託機構欄「受理、安排檢查」</td></tr>
-        <tr><td>QMS 常見問答 一、Q19 <a class="cite" href="#s06">S06</a></td><td>多廠屬同一品質系統併案時，「食品藥物管理署得指派同一受託評鑑機構安排檢查」</td></tr>
-        <tr><td>QMS 申請須知 八(六)2 <a class="cite" href="#s07">S07</a></td><td>「複評案件由原承辦人員或原受託機構辦理」</td></tr>
-        <tr><td>委託辦法 第17條 <a class="cite" href="#s03">S03</a></td><td>受託機構有應迴避或影響獨立公正之情事應通知；「中央主管機關得依前項通知，變更受託機構」</td></tr>
-        <tr><td>核發辦法 第8條 <a class="cite" href="#s02">S02</a></td><td>「前項取樣為無償，並隨機為之，醫療器材製造業者不得指定樣品」——<b>「隨機」只用於產品取樣</b></td></tr>
-      </tbody>
-    </table>
-    </div>
-    <p><b>怎麼理解：</b>從業者角度，送件後由誰來查不是自己選的（與官方流程一致）；但官方沒有說是「隨機」，派案也可能直接由食藥署承辦人員辦理、不一定派給受託機構。食藥署依什麼原則派給哪一家（輪派、依產品別、依地區或其他），官方文件未揭露。</p>
-    <p><b>公正性設計（供參）：</b>受託機構檢查人員若「現為受檢查醫療器材商諮詢輔導機構之從業人員」等情形，應自行迴避 <a class="cite" href="#s03">S03</a>。</p>
+  <div class="note">
+    <b>⚠️ 最容易誤會的一點</b>：上面那 4 家財團法人<b>不核發 ISO 13485 證書</b>。它們在此的角色是「受食藥署委託的稽查執行者」，產出的是<b>稽查報告</b>；最後核發的是食藥署，證件名稱叫「<b>醫療器材製造許可</b>」，不是 ISO 13485 證書。
   </div>
 
-  <div class="q" id="q3">
-    <h3><span class="tag">Q3</span>現行到底幾家？全名？家數差異怎麼來的？</h3>
-    <div class="verdict"><b>結論：</b>(a) 現行 <b>4 家</b>，全名見 Q1 <a class="cite" href="#s06">S06</a><a class="cite" href="#s09">S09</a>。(b) 2004 年官方文件記載為 <b>3 家</b>（金屬中心、台灣電子檢驗中心、工研院量測中心，<b>無塑膠中心</b>）<a class="cite" href="#s19">S19</a>；至遲 2013 年擴為含塑膠中心的 4 家 <a class="cite" href="#s14">S14</a>；台灣電子檢驗中心於 2020 年更名為台灣商品檢測驗證中心 <a class="cite" href="#s20">S20</a>。</div>
-    <p>完整沿革見下方<a href="#timeline">「沿革時間線」</a>。塑膠中心加入的確切年份【查無】：2013 年公告停止適用的 93/11/4、95/2/21、95/7/11 三則舊公告原文未上網 <a class="cite" href="#s14">S14</a>。</p>
-    <p><b>官方用語演變</b>（同一批機構）：受託查核機構（2004）→ 代施查核機構（2013、2018）→ 受託查核機構（2021 後公告）／受託評鑑機構（2026 問答集）／受託機構（2026 須知）<a class="cite" href="#s19">S19</a><a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a><a class="cite" href="#s09">S09</a><a class="cite" href="#s06">S06</a><a class="cite" href="#s07">S07</a>。</p>
+  <div class="tip">
+    <b>📌 派案方式</b>：官方文件用語是食藥署「<b>派案／分派／指派</b>」，案件也可能直接由食藥署承辦人員執行。法規未提供業者指定受託機構的程序；「隨機」二字在法規中<b>僅用於產品取樣</b>（稽查時取樣為無償且隨機，業者不得指定樣品）。
   </div>
 
-  <div class="q" id="q4">
-    <h3><span class="tag">Q4</span>SGS 與 BSI 在台灣醫材法規體系中是什麼身分？</h3>
-    <div class="verdict"><b>結論：</b><b>兩者都不在</b> Q1 的 4 家受託機構名單。兩者曾同列 TCP II（2013–2021）歐盟代施查核機構；現行 TCP III 只有 BSI 的荷蘭實體在列，SGS 不在。兩者在台灣另以民間驗證機構身分提供 ISO 13485 驗證（自述）。</div>
-    <div class="tw">
-    <table>
-      <thead><tr><th>面向</th><th>BSI</th><th>SGS</th></tr></thead>
-      <tbody>
-        <tr><td>是否為食藥署國內受託查核機構（Q1 名單）</td><td><b>否</b> <a class="cite" href="#s09">S09</a></td><td><b>否</b> <a class="cite" href="#s09">S09</a></td></tr>
-        <tr><td>TCP II（2013-05-01～2021-05-25）歐盟代施查核機構</td><td><b>是</b>：「BSI，Notified Body 0086」（英國）<a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a></td><td><b>是</b>：「SGS UNITED KINGDOM LIMITED，Notified Body 0120」（英國）<a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a></td></tr>
-        <tr><td>TCP III（2022 起）歐盟公告機構合作夥伴</td><td><b>是</b>：「BSI Group The Netherlands B.V.，Notified Body 2797」，2022-09-02 新增，現行 10 家之一 <a class="cite" href="#s11">S11</a><a class="cite" href="#s09">S09</a></td><td><b>否</b>：現行 10 家及歷次清單（6／8／9／10 家）皆無 SGS 任何實體 <a class="cite" href="#s09">S09</a><a class="cite" href="#s10">S10</a><a class="cite" href="#s11">S11</a><a class="cite" href="#s12">S12</a></td></tr>
-        <tr><td>TAF 管理系統驗證機構認證（台灣據點）</td><td>新加坡商英國標準協會集團私人有限公司臺灣分公司，MS004 <a class="cite" href="#s24">S24</a></td><td>台灣檢驗科技股份有限公司，MS001 <a class="cite" href="#s24">S24</a></td></tr>
-        <tr><td>ISO 13485 驗證服務</td><td>自述為 ISO 13485 驗證機構 <a class="cite" href="#s26">S26</a></td><td>自述提供 ISO 13485 驗證相關服務 <a class="cite" href="#s27">S27</a></td></tr>
-      </tbody>
-    </table>
-    </div>
-    <h3>TCP 合作機構的角色（不是國內派案稽核）</h3>
-    <ul class="dots">
-      <li>TCP III 下，歐盟、瑞士及列支敦斯登的製造業者可用清單所列公告機構的查廠報告，減免向食藥署申請品質管理系統文件審查所需的部分文件 <a class="cite" href="#s09">S09</a><a class="cite" href="#s13">S13</a>。</li>
-      <li>反向：「我國醫療器材製造業者亦得檢附食藥署出具之醫療器材品質管理系統準則稽查報告，向簽署TCP III之歐盟醫療器材公告機構申請品質管理系統驗證，得減少赴廠實地稽查時間」<a class="cite" href="#s13">S13</a>。</li>
-      <li>TCP II 時期，歐盟代施查核機構「所出具之查廠報告，得依藥物製造業者檢查辦法第7條第5項規定辦理」<a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a>。</li>
-    </ul>
-    <div class="note"><b>可能的落差來源（推測，待確認）：</b>TCP II 時期官方公告同時稱國內 4 家與 BSI、SGS UK 等歐盟機構為「代施查核機構」<a class="cite" href="#s14">S14</a>，用語相近，容易被記成同一份名單。</div>
-  </div>
-
-  <div class="q" id="q5">
-    <h3><span class="tag">Q5</span>政府端的查廠機構可以核發 ISO 13485 證書嗎？</h3>
-    <div class="verdict"><b>結論：以「食藥署受託機構」的身分，不行。</b>這條流程的產出是食藥署的准予核定函文與「醫療器材製造許可」，不是 ISO 13485 證書。</div>
-    <ul class="dots">
-      <li>檢查合格「核發醫療器材製造許可」的是<b>中央主管機關</b> <a class="cite" href="#s02">S02</a>；流程上受託機構「撰寫稽查報告」，食藥署「核發函文」<a class="cite" href="#s07">S07</a>。</li>
-      <li>檢查標準是 <b>QMS 準則</b>（參照 ISO 13485:2016 訂定）<a class="cite" href="#s06">S06</a>；產出的「醫療器材品質管理系統準則稽查報告」僅核發正體中文版 <a class="cite" href="#s06">S06</a><a class="cite" href="#s07">S07</a>。</li>
-      <li>官方把兩者分開：我國業者可「檢附食藥署出具之…稽查報告，向…歐盟醫療器材公告機構<b>申請品質管理系統驗證</b>」<a class="cite" href="#s13">S13</a>——驗證要另外向驗證機構申請。</li>
-    </ul>
-    <h3>ISO 13485 證書由誰發？</h3>
-    <ul class="dots">
-      <li>由第三方<b>驗證機構</b>核發，例如 BSI、SGS 皆自述提供 ISO 13485 驗證 <a class="cite" href="#s26">S26</a><a class="cite" href="#s27">S27</a>。</li>
-      <li><b>TAF（財團法人全國認證基金會）只做「認證」不做「驗證」</b>：「本會提供管理系統驗證機構認證(Accreditation)服務，不提供稽核/驗證(Audit/Certification)服務」<a class="cite" href="#s23">S23</a>。且 TAF 現行管理系統驗證機構認證領域（ISO 9001／14001／45001／22000／27001 系列／50001／46001）<b>未列 ISO 13485</b> <a class="cite" href="#s23">S23</a>；某張 ISO 13485 證書由哪個認證機構背書，需看證書上的認證標誌（本次未逐張查證）。</li>
-    </ul>
-    <h3>這 4 家法人有沒有另外的驗證業務？</h3>
-    <ul class="dots">
-      <li>商檢中心持有 TAF 管理系統驗證機構認證（MS020），但官網管理系統驗證項目列 ISO 9001／14001／45001／TOSHMS／22716／27001，<b>未列 ISO 13485</b> <a class="cite" href="#s22">S22</a><a class="cite" href="#s24">S24</a>。</li>
-      <li>金屬中心持有 TAF 管理系統驗證機構認證（MS019）<a class="cite" href="#s24">S24</a>，但 TAF 該方案不含 ISO 13485 <a class="cite" href="#s23">S23</a>；金屬中心、工研院量測中心、塑膠中心是否另提供 ISO 13485 驗證【未逐一查證】。</li>
-    </ul>
-  </div>
-
-  <div class="q" id="q6">
-    <h3><span class="tag">Q6</span>「醫材取證」＝ ISO 13485 嗎？台灣業者要拿哪些證照／許可？</h3>
-    <div class="verdict"><b>結論：不等於。</b>台灣法定要拿的是三層許可；ISO 13485 證書是<b>自願性第三方驗證</b>，不能取代食藥署的製造許可——國內製造者除公告免取得品項外，一律須檢查合格取得製造許可 <a class="cite" href="#s01">S01</a><a class="cite" href="#s06">S06</a>；產品取得國外上市許可也不能取代 <a class="cite" href="#s06">S06</a>。</div>
-
-    <div class="flow" role="img" aria-label="取證三層的先後與平行關係">
-      <div class="box"><div class="lv">① 執照層</div><div class="nm">醫療器材商許可執照（製造業／販賣業）</div><div class="dt">直轄市、縣（市）主管機關核發；從事製造另須工廠登記（有例外）<a class="cite" href="#s01">S01</a><a class="cite" href="#s06">S06</a></div></div>
-      <div class="arrow"><svg width="18" height="26" viewBox="0 0 18 26" aria-hidden="true"><path d="M9 1v20M2 15l7 8 7-8" fill="none" stroke="#16213a" stroke-width="2.2"/></svg><span><b>先後：</b>申請 QMS 前須已取得執照與工廠登記 <a class="cite" href="#s06">S06</a></span></div>
-      <div class="box"><div class="lv">② 品質系統層（強制）</div><div class="nm">醫療器材製造許可（QMS 檢查合格）</div><div class="dt">食藥署核發；效期 3 年，期滿前 6–12 個月申請展延 <a class="cite" href="#s02">S02</a>；規費 6 萬／3 萬元 <a class="cite" href="#s05">S05</a></div></div>
-      <div class="arrow"><svg width="18" height="26" viewBox="0 0 18 26" aria-hidden="true"><path d="M5 1v24M13 1v24" fill="none" stroke="#1f6f5c" stroke-width="2.2"/></svg><span><b>可平行：</b>與查驗登記同時進行，但許可證核發前須補齊製造許可 <a class="cite" href="#s25">S25</a></span></div>
-      <div class="box"><div class="lv">③ 產品層（強制）</div><div class="nm">醫療器材許可證（查驗登記）或登錄</div><div class="dt">食藥署核發；許可證最長 5 年、可展延 <a class="cite" href="#s01">S01</a>；登錄每年 10 月年度申報 <a class="cite" href="#s04">S04</a></div></div>
-      <div class="arrow"><svg width="18" height="26" viewBox="0 0 18 26" aria-hidden="true"><circle cx="9" cy="13" r="3" fill="#8a90a2"/></svg><span>另一條獨立、自願的線：</span></div>
-      <div class="box opt"><div class="lv">②′ 自願性驗證</div><div class="nm">ISO 13485 證書</div><div class="dt">民間驗證機構核發（如 BSI、SGS 自述）<a class="cite" href="#s26">S26</a><a class="cite" href="#s27">S27</a>；可用食藥署 QMS 稽查報告向 TCP III 歐盟公告機構申請 QMS 驗證以減少實地稽查時間 <a class="cite" href="#s13">S13</a></div></div>
-    </div>
-
-    <div class="tw">
-    <table>
-      <thead><tr><th>層</th><th>證照／許可</th><th>法源</th><th>核發者</th><th>效期</th><th>性質</th></tr></thead>
-      <tbody>
-        <tr><td class="c">① 執照</td><td>醫療器材商許可執照（製造業／販賣業）</td><td>醫療器材管理法第13條 <a class="cite" href="#s01">S01</a></td><td>直轄市、縣（市）主管機關</td><td>法條未規定效期（本次未另查）</td><td>營業資格；製造另須工廠登記（第21條，有例外）<a class="cite" href="#s06">S06</a></td></tr>
-        <tr><td class="c">② 品質系統</td><td><b>醫療器材製造許可</b>（俗稱 QMS 核定函）</td><td>第22條 <a class="cite" href="#s01">S01</a>；核發辦法 <a class="cite" href="#s02">S02</a></td><td>中央主管機關（食藥署；稽查可派案予受託機構）</td><td><b>3 年</b>，期滿前 6–12 個月展延</td><td>強制（公告免取得品項除外）</td></tr>
-        <tr><td class="c">②′ 自願</td><td>ISO 13485 證書</td><td>非法定許可</td><td>民間驗證機構 <a class="cite" href="#s26">S26</a><a class="cite" href="#s27">S27</a></td><td>依驗證機構規定（未查）</td><td>自願；依目標市場或客戶要求</td></tr>
-        <tr><td class="c">③ 產品</td><td><b>醫療器材許可證</b>，或<b>登錄</b>（公告之品項）</td><td>第25條 <a class="cite" href="#s01">S01</a>；許可證準則 <a class="cite" href="#s04">S04</a></td><td>中央主管機關</td><td>許可證最長 <b>5 年</b>、可展延；登錄每年 10 月申報</td><td>強制；許可證登記事項含「製造許可編號」<a class="cite" href="#s04">S04</a></td></tr>
-      </tbody>
-    </table>
-    </div>
-    <ul class="dots">
-      <li><b>①→②：先後。</b>申請 QMS 前須已辦工廠登記及取得製造業醫療器材商許可執照 <a class="cite" href="#s06">S06</a>。</li>
-      <li><b>②與③：可平行送審。</b>CDE：「得與醫療器材之查驗登記申請同時進行，惟醫療器材商須於查驗登記申請過程中補齊所需文件、資料（包括…製造許可），始得核發醫療器材許可證」<a class="cite" href="#s25">S25</a>；第二、三等級查驗登記應附 QMS 證明文件 <a class="cite" href="#s04">S04</a>。</li>
-      <li><b>輸入醫材：</b>國外製造廠的品質系統，由代理輸入之醫療器材商向食藥署申請 <a class="cite" href="#s02">S02</a>。</li>
-    </ul>
+  <div class="tip">
+    <b>📌 外銷歐盟另有一條路</b>：透過「臺歐醫療器材技術合作方案（TCP III）」，可用食藥署出具的 QMS 稽查報告，向清單所列歐盟公告機構（如 BSI）申請品質管理系統驗證，以減少赴廠實地稽查時間。反之亦然。
   </div>
 </section>
 
-<section id="timeline">
-  <h2><span class="no">03</span>沿革時間線</h2>
-  <p class="sub">家數與名稱怎麼變成今天的樣子。</p>
-  <div class="tl">
-    <div class="it"><div class="d">1999-02-10（88年）</div><div class="w">衛生署正式實施醫療器材優良製造規範（GMP）</div><div class="m">S19</div></div>
-    <div class="it hl"><div class="d">2004-02（93年，報告日期）</div><div class="w">官方記載「經本署公告核定之三家『受託查核機構』」：<b>金屬中心、台灣電子檢驗中心、工研院量測中心</b>（無塑膠中心）</div><div class="m">S19・<b>3 家</b></div></div>
-    <div class="it"><div class="d">2004（93年）</div><div class="w">啟動臺歐 TCP（新聞稿原文：「食藥署於93年啟動臺歐TCP」）</div><div class="m">S13</div></div>
-    <div class="it hl"><div class="d">2013-05-01（102年）</div><div class="w">臺歐 TCP II 公告：國內 <b>4 家「醫療器材代施查核機構」</b>（工研院量測中心、金屬中心、台灣電子檢驗中心、<b>塑膠中心</b>）＋ 11 家歐盟代施查核機構（含 <b>BSI 0086</b>、<b>SGS UK 0120</b>）</div><div class="m">S14・<b>4 家</b></div></div>
-    <div class="it"><div class="d">2018-07-26（107年）</div><div class="w">TCP II 歐盟代施查核機構修正為 10 家（BSI、SGS UK 仍在列）</div><div class="m">S15</div></div>
-    <div class="it"><div class="d">2019-11-21</div><div class="w">TCP III 正式受理歐盟公告機構申請</div><div class="m">S17</div></div>
-    <div class="it"><div class="d">2020</div><div class="w">財團法人台灣電子檢驗中心（1983 年成立）更名為<b>財團法人台灣商品檢測驗證中心</b></div><div class="m">S20</div></div>
-    <div class="it"><div class="d">2021-05-01（110年）</div><div class="w">《醫療器材管理法》施行（行政院110年2月17日院臺衛字第1100001220號令）；GMP 改為 QMS 準則</div><div class="m">S01・S06</div></div>
-    <div class="it"><div class="d">2021-05-25</div><div class="w">TCP II 結束；2021-05-26 至 2021-12-31 為過渡期</div><div class="m">S16</div></div>
-    <div class="it hl"><div class="d">2022-01-01（111年）</div><div class="w">TCP III 施行：4 家「醫療器材受託查核機構」＋ 6 家歐盟公告機構（無 BSI、無 SGS）</div><div class="m">S12・S13</div></div>
-    <div class="it"><div class="d">2022-09-02</div><div class="w">TCP III 增為 8 家：新增 <b>BSI Group The Netherlands B.V.（2797）</b>、DQS Medizinprodukte GmbH（0297）</div><div class="m">S11</div></div>
-    <div class="it"><div class="d">2023-01-07（112年）</div><div class="w">TCP III 增為 9 家：新增 DEKRA Certification GmbH（0124）</div><div class="m">S10</div></div>
-    <div class="it"><div class="d">2024-08-09（113年）</div><div class="w">TCP III 增為 <b>10 家</b>：新增 DNV PRODUCT ASSURANCE AS（2460）；MEDCERT 更名為 DNV MEDCERT GmbH</div><div class="m">S09</div></div>
-    <div class="it hl"><div class="d">2026-04-17（115年）</div><div class="w">QMS 常見問答集修訂：「目前指定之受託評鑑機構」<b>4 家</b></div><div class="m">S06</div></div>
-    <div class="it"><div class="d">2026-05-08（115年）</div><div class="w">公告「醫療器材商檢查受託機構認證作業程序」，開始受理受託機構認證申請（未來名單可能經認證＋採購程序變動；查證日止無新增公告）</div><div class="m">S18</div></div>
+<!-- ============ 03 ============ -->
+<section id="flow">
+  <h2><span class="no">03</span>流程（簡單版）</h2>
+  <p class="sub">從零到產品在台灣上市，大致是這樣走。</p>
+
+  <div class="flow">
+    <div class="box">
+      <div class="lv">第 0 步</div>
+      <div class="nm">確認產品分類分級</div>
+      <div class="dt">決定之後走「查驗登記（許可證）」或「登錄」</div>
+    </div>
+    <div class="arrow">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1v12" stroke="#1f6f5c" stroke-width="2"/><path d="M3 9l5 5 5-5" fill="none" stroke="#1f6f5c" stroke-width="2"/></svg>
+    </div>
+    <div class="box who">
+      <div class="lv">第 1 步</div>
+      <div class="nm">公司登記 → 工廠登記 → 醫療器材商許可執照（製造業）</div>
+      <div class="dt">主管機關：縣市政府（工廠登記）、縣市衛生局（許可執照）</div>
+    </div>
+    <div class="arrow">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1v12" stroke="#1f6f5c" stroke-width="2"/><path d="M3 9l5 5 5-5" fill="none" stroke="#1f6f5c" stroke-width="2"/></svg>
+    </div>
+    <div class="box">
+      <div class="lv">第 2 步</div>
+      <div class="nm">QMS 檢查 → 醫療器材製造許可（3 年）</div>
+      <div class="dt">主管機關：食藥署（得派案予 4 家受託機構執行稽查）</div>
+    </div>
+    <div class="arrow">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1v12" stroke="#1f6f5c" stroke-width="2"/><path d="M3 9l5 5 5-5" fill="none" stroke="#1f6f5c" stroke-width="2"/></svg>
+      <span>與第 3 步 <b>可平行送審</b></span>
+    </div>
+    <div class="box">
+      <div class="lv">第 3 步</div>
+      <div class="nm">查驗登記 → 醫療器材許可證（最長 5 年）／ 登錄</div>
+      <div class="dt">主管機關：食藥署</div>
+    </div>
+    <div class="arrow">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1v12" stroke="#1f6f5c" stroke-width="2"/><path d="M3 9l5 5 5-5" fill="none" stroke="#1f6f5c" stroke-width="2"/></svg>
+    </div>
+    <div class="box opt">
+      <div class="lv">第 4 步</div>
+      <div class="nm">上市</div>
+      <div class="dt">中文標籤及說明書、廣告核准、安全監視等後續義務</div>
+    </div>
   </div>
+
+  <ul class="dots">
+    <li><b>第 1 步是第 2 步的前提</b>：申請 QMS 前，須先完成工廠登記並取得製造業醫療器材商許可執照。</li>
+    <li><b>第 2 步與第 3 步可平行送審</b>：但許可證核發前，必須補齊製造許可。</li>
+    <li><b>輸入醫材走另一條線</b>：由代理輸入之醫療器材商向食藥署申請 QSD，並辦理查驗登記。</li>
+    <li>產品即使已取得<b>國外上市許可</b>，也不能取代國內的製造許可與許可證。</li>
+  </ul>
 </section>
 
-<section id="roles">
-  <h2><span class="no">04</span>名單與角色總表</h2>
-  <p class="sub">把「誰稽核、誰發許可、誰發 ISO 證書、誰做認證」分開。</p>
+<!-- ============ 04 ============ -->
+<section id="unit">
+  <h2><span class="no">04</span>哪些以「公司」為單位？哪些以「產品」為單位？</h2>
+  <p class="sub">這是實務上最常搞混、也最影響成本與時程的一題。</p>
+
+  <div class="grid2">
+    <div class="panel co">
+      <h4>🏢 以公司／場所為單位</h4>
+      <ul>
+        <li><b>醫療器材商許可執照</b>（製造業／販賣業）— 每一個場所各別辦理</li>
+        <li><b>工廠登記</b> — 每一個廠址</li>
+        <li><b>醫療器材製造許可（QMS）</b> — 以製造廠為單位</li>
+        <li><b>運銷許可（GDP）</b> — 以販賣業者為單位</li>
+        <li><b>QSD</b> — 以國外製造廠為單位</li>
+        <li><b>ISO 13485 證書</b> — 以品質系統為單位</li>
+      </ul>
+    </div>
+    <div class="panel pr">
+      <h4>📦 以產品為單位</h4>
+      <ul>
+        <li><b>醫療器材許可證</b>（查驗登記）— 一個品項一張</li>
+        <li><b>醫療器材登錄</b> — 依品項</li>
+        <li><b>臨床試驗核准</b> — 以試驗案為單位</li>
+        <li><b>廣告核准</b> — 以廣告案為單位</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>最常被問的一題：製造許可是一張，還是每個產品都要一張？</h3>
   <div class="tw">
-  <table>
-    <thead><tr><th>機構</th><th>身分</th><th>在台灣醫材法規中的角色</th><th>能否核發 ISO 13485</th><th>來源</th></tr></thead>
-    <tbody>
-      <tr><td>衛生福利部食品藥物管理署</td><td>中央主管機關（衛福部）之所屬機關</td><td>受理 QMS 申請、派案、複審複核、核發製造許可；查驗登記核發許可證</td><td>否（核發製造許可，非 ISO 證書）</td><td><a class="cite" href="#s01">S01</a><a class="cite" href="#s02">S02</a><a class="cite" href="#s07">S07</a></td></tr>
-      <tr><td>工研院量測中心／金屬中心／商檢中心／塑膠中心</td><td>財團法人，食藥署受託查核（評鑑）機構</td><td>受食藥署派案執行 QMS 稽查、撰寫稽查報告</td><td>以受託身分：否</td><td><a class="cite" href="#s06">S06</a><a class="cite" href="#s07">S07</a><a class="cite" href="#s09">S09</a></td></tr>
-      <tr><td>BSI Group The Netherlands B.V.（NB 2797）</td><td>歐盟醫療器材公告機構</td><td>TCP III 合作夥伴（2022-09-02 起）</td><td>BSI 自述為 ISO 13485 驗證機構</td><td><a class="cite" href="#s09">S09</a><a class="cite" href="#s11">S11</a><a class="cite" href="#s26">S26</a></td></tr>
-      <tr><td>BSI（NB 0086，英國）</td><td>TCP II 時期歐盟代施查核機構</td><td>TCP II（2013–2021）合作夥伴；BSI 現自述 0086 為英國核准機構編號</td><td>—</td><td><a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a><a class="cite" href="#s26">S26</a></td></tr>
-      <tr><td>SGS United Kingdom Limited（NB 0120）</td><td>TCP II 時期歐盟代施查核機構</td><td>TCP II（2013–2021）合作夥伴；不在 TCP III</td><td>—</td><td><a class="cite" href="#s14">S14</a><a class="cite" href="#s15">S15</a><a class="cite" href="#s09">S09</a></td></tr>
-      <tr><td>台灣檢驗科技股份有限公司（SGS 台灣）</td><td>民間檢測驗證公司，TAF MS001</td><td>非食藥署受託機構</td><td>自述提供 ISO 13485 驗證服務</td><td><a class="cite" href="#s24">S24</a><a class="cite" href="#s27">S27</a></td></tr>
-      <tr><td>財團法人全國認證基金會（TAF）</td><td>認證機構</td><td>認證驗證機構／實驗室，不做驗證</td><td>否（且現行 MS 認證領域未列 ISO 13485）</td><td><a class="cite" href="#s23">S23</a></td></tr>
-      <tr><td>財團法人醫藥品查驗中心（CDE）</td><td>財團法人</td><td>官網列有醫療器材審查評估、查驗登記、法規諮詢輔導業務</td><td>否</td><td><a class="cite" href="#s25">S25</a></td></tr>
-    </tbody>
-  </table>
+    <table class="narrow">
+      <thead><tr><th>問題</th><th>答案</th></tr></thead>
+      <tbody>
+        <tr><td class="c">製造許可是以什麼為單位？</td><td><b>以「製造廠」為單位核發，一個廠一張。</b></td></tr>
+        <tr><td class="c">證上會寫產品嗎？</td><td>會。製造許可應記載「<b>許可項目及作業內容</b>」。</td></tr>
+        <tr><td class="c">新增產品要重新申請嗎？</td><td>新產品若<b>落在原許可項目範圍內</b> → <b>不必重新申請</b>。</td></tr>
+        <tr><td class="c">超出範圍呢？</td><td>要辦理<b>變更</b>；變更的申請與檢查程序<b>準用新申請的規定</b> → 等於要重新接受檢查。</td></tr>
+        <tr><td class="c">一句話結論</td><td><b>一個廠一張製造許可，但要留意許可項目是否涵蓋新產品。</b></td></tr>
+      </tbody>
+    </table>
   </div>
-  <h3>TCP III 現行 10 家歐盟公告機構（113/8/9 衛授食字第1131104830號公告）<a class="cite" href="#s09">S09</a></h3>
+</section>
+
+<!-- ============ 05 ============ -->
+<section id="iso">
+  <h2><span class="no">05</span>「醫材取證」不等於 ISO 13485</h2>
+  <p class="sub">兩者常被當成同一件事，但性質、依據、發證者都不同。</p>
   <div class="tw">
-  <table class="narrow">
-    <thead><tr><th>#</th><th>公告機構</th><th>NB 編號</th><th>國別</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>DEKRA Certification B.V.</td><td>0344</td><td>荷蘭</td></tr>
-      <tr><td>2</td><td>GMED</td><td>0459</td><td>法國</td></tr>
-      <tr><td>3</td><td>mdc medical device certification GmbH</td><td>0483</td><td>德國</td></tr>
-      <tr><td>4</td><td>DNV MEDCERT GmbH</td><td>0482</td><td>德國</td></tr>
-      <tr><td>5</td><td>TÜV Rheinland LGA Products GmbH (TRLP)</td><td>0197</td><td>德國</td></tr>
-      <tr><td>6</td><td>TÜV SÜD Product Service GmbH</td><td>0123</td><td>德國</td></tr>
-      <tr><td>7</td><td><b>BSI Group The Netherlands B.V.</b></td><td><b>2797</b></td><td>荷蘭</td></tr>
-      <tr><td>8</td><td>DQS Medizinprodukte GmbH</td><td>0297</td><td>德國</td></tr>
-      <tr><td>9</td><td>DEKRA Certification GmbH</td><td>0124</td><td>德國</td></tr>
-      <tr><td>10</td><td>DNV PRODUCT ASSURANCE AS</td><td>2460</td><td>挪威</td></tr>
-    </tbody>
-  </table>
+    <table class="narrow">
+      <thead><tr><th>項目</th><th>法定許可（食藥署／衛生局）</th><th>ISO 13485（民間驗證機構）</th></tr></thead>
+      <tbody>
+        <tr><td class="c">性質</td><td><span class="badge ok">強制</span></td><td><span class="badge diff">自願</span></td></tr>
+        <tr><td class="c">依據</td><td>醫療器材管理法</td><td>國際標準（非我國法規）</td></tr>
+        <tr><td class="c">涵蓋單位</td><td>公司（品質系統）＋ 產品</td><td>公司（品質系統）</td></tr>
+        <tr><td class="c">用途</td><td>在台灣合法製造、輸入、販賣</td><td>客戶要求、外銷市場、內部管理</td></tr>
+        <tr><td class="c">可否互相取代</td><td colspan="2">不能用 ISO 13485 取代製造許可；反之亦然。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="verdict">
+    補充：我國「醫療器材品質管理系統準則（QMS 準則）」係<b>參照 ISO 13485:2016 訂定</b>，兩者內容高度相近，但<b>證書名稱與發證者不同</b>——一個是食藥署核發的「醫療器材製造許可」，一個是民間驗證機構核發的「ISO 13485 證書」。
   </div>
 </section>
 
-<section id="confirm">
-  <h2><span class="no">05</span>建議跟馬哥確認的事</h2>
-  <p class="sub">確認這 4 點，就能對齊兩邊資訊的時間點與指涉對象。</p>
-  <ol class="checklist">
-    <li><b>「三家」的第三家是哪一家？</b>是工研院量測中心，還是台灣商品檢測驗證中心（舊名台灣電子檢驗中心）？這個資訊大約是哪一年聽到的？</li>
-    <li><b>「隨機抽一家」的出處：</b>是食藥署說明、實際送件經驗，還是顧問轉述？實際送件時是否收到食藥署派案通知、通知上寫哪家機構？</li>
-    <li><b>SGS、BSI 指的是哪一種身分：</b>(a) 臺歐 TCP 合作的歐盟機構（BSI 現仍在 TCP III；SGS 只在 2021 年以前的 TCP II）；(b) 民間 ISO 13485 驗證；還是 (c) 其他角色？</li>
-    <li><b>「針對 ISO 13485 審查」指的是哪一件事：</b>食藥署 QMS 檢查（依 QMS 準則，取得製造許可，強制）？還是民間 ISO 13485 驗證（自願，例如外銷客戶要求）？兩者是否都要做？</li>
-  </ol>
-</section>
-
-<section id="limits">
-  <h2><span class="no">06</span>查無與限制</h2>
-  <p class="sub">查不到的就寫查不到。</p>
-  <div class="tw">
-  <table class="narrow">
-    <thead><tr><th>項目</th><th>狀態</th></tr></thead>
-    <tbody>
-      <tr><td>食藥署派案給哪一家的依據（隨機／輪派／依產品或地區）</td><td><span class="badge nf">查無</span> 官方文件只寫「派案／分派／指派」</td></tr>
-      <tr><td>塑膠中心加入受託（代施）查核機構的確切年份</td><td><span class="badge nf">查無</span> 僅知 2004-02 為 3 家、2013-05 為 4 家</td></tr>
-      <tr><td>2026-05-08 認證程序公告後是否已有新受託機構</td><td><span class="badge nf">查無新增公告</span> 食藥署公告列表 2026 年各頁比對</td></tr>
-      <tr><td>SGS 任何實體是否申請 TCP III</td><td><span class="badge nf">查無</span></td></tr>
-      <tr><td>金屬中心、工研院量測中心、塑膠中心是否另提供 ISO 13485 驗證</td><td><span class="badge gap">未逐一查證</span></td></tr>
-      <tr><td>ISO 13485 證書效期、民間驗證費用</td><td><span class="badge gap">未查</span> 非本次範圍</td></tr>
-      <tr><td>醫療器材商許可執照效期</td><td><span class="badge gap">未查</span> 法條未規定</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <p><b>查證方法：</b>一律以官方一手來源為主——全國法規資料庫條文、衛福部／食藥署公告（含掃描原件與附件清單）、食藥署 QMS 專區問答集與申請須知、政府出國報告、CDE 問答、TAF 方案說明與認證名錄、機構官網自述。名單類結論逐版比對公告附件原文（TCP II 2013／2018、TCP III 2021／2022／2023／2024）。未引用顧問公司、媒體、補習班文章作為結論依據。</p>
-</section>
-
+<!-- ============ 06 ============ -->
 <section id="sources">
-  <h2><span class="no">07</span>資料來源（查證日期 2026-10-13）</h2>
-  <p class="sub">層級：法規條文 ＞ 官方公告 ＞ 官方問答集／須知／網頁 ＞ 官方新聞稿 ＞ 政府出國報告 ＞ CDE 問答 ＞ TAF 說明／名錄 ＞ 機構自述。</p>
+  <h2><span class="no">06</span>資料來源</h2>
+  <p class="sub">查證日期 2026-10-13。以官方一手來源為主：法規條文、主管機關公告、官方問答集與須知、認證機構名錄、機構官方網站。</p>
   <ol class="src">
-    <li id="s01"><span class="id">S01</span>醫療器材管理法（含沿革）<span class="lvl">法規條文</span><a class="url" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030106">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030106</a><a class="url" href="https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=L0030106">https://law.moj.gov.tw/LawClass/LawHistory.aspx?pcode=L0030106</a><span class="sup">支持：110/5/1 施行；第10、13、21、22、25、27、28、79條</span></li>
-    <li id="s02"><span class="id">S02</span>醫療器材品質管理系統檢查及製造許可核發辦法<span class="lvl">法規條文</span><a class="url" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030112">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030112</a><span class="sup">支持：第2條（申請）、第3條（中央主管機關核發製造許可；2個月內複評1次）、第6條（3年效期）、第8條（取樣隨機）</span></li>
-    <li id="s03"><span class="id">S03</span>醫療器材管理事項委託及受託機構認證作業辦法<span class="lvl">法規條文</span><a class="url" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030129">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030129</a><span class="sup">支持：第3條（行政契約／認證）、第7條（檢查範圍含QMS）、第16條（迴避）、第17條（得變更受託機構）</span></li>
-    <li id="s04"><span class="id">S04</span>醫療器材許可證核發與登錄及年度申報準則（含附表二）<span class="lvl">法規條文</span><a class="url" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030128">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030128</a><a class="url" href="https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000355495&amp;lan=C">https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000355495&amp;lan=C</a><span class="sup">支持：第3條（登記事項含製造許可編號）、附表二第6項（應附QMS證明文件）、第20、22條（登錄與年度申報）</span></li>
-    <li id="s05"><span class="id">S05</span>醫療器材行政規費收費標準<span class="lvl">法規條文</span><a class="url" href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030123">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030123</a><span class="sup">支持：第2條第6款，國內QMS檢查6萬元、精要模式3萬元</span></li>
-    <li id="s06"><span class="id">S06</span>食藥署《國產醫療器材製造業者符合醫療器材品質管理系統準則(QMS)檢查常見問答集》（修訂115年4月17日）<span class="lvl">官方問答集</span><a class="url" href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639122910245395520&amp;type=3&amp;iid=11715">https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639122910245395520&amp;type=3&amp;iid=11715</a><span class="sup">支持：一、Q9（4家全名）、Q19（食藥署得指派）、Q5、Q6、Q10、Q12、Q13；二、Q4（參照ISO 13485:2016）、Q20、Q21</span></li>
-    <li id="s07"><span class="id">S07</span>食藥署《醫療器材國產製造業者符合「醫療器材品質管理系統準則」(QMS)之申請須知》（115年4月17日）<span class="lvl">官方須知</span><a class="url" href="https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639122908286089917&amp;type=4">https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639122908286089917&amp;type=4</a><span class="sup">支持：八(一)1「派案至承辦人員(食藥署)或受託機構」、作業流程圖「案件分派發文」、八(六)2 複評</span></li>
-    <li id="s08"><span class="id">S08</span>食藥署「國內醫療器材製造業者品質管理系統(QMS)申請」專頁<span class="lvl">官方網頁</span><a class="url" href="https://www.fda.gov.tw/Tc/siteContent.aspx?sid=11584">https://www.fda.gov.tw/Tc/siteContent.aspx?sid=11584</a><span class="sup">支持：申請費用6萬／3萬元、製造許可效期3年</span></li>
-    <li id="s09"><span class="id">S09</span>衛福部公告 113年8月9日 衛授食字第1131104830號（TCP III 10家清單）<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=30699">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=30699</a><span class="sup">支持：4家受託查核機構全名；TCP III 現行10家（BSI NL 2797 在列，無SGS）</span></li>
-    <li id="s10"><span class="id">S10</span>衛福部公告 112年1月7日 衛授食字第1111108228號（TCP III 9家清單）<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/TC/newsContent.aspx?cid=3&amp;id=28452">https://www.fda.gov.tw/TC/newsContent.aspx?cid=3&amp;id=28452</a><span class="sup">支持：9家清單；4家受託查核機構全名</span></li>
-    <li id="s11"><span class="id">S11</span>食藥署公告 2022-09-02（衛授食字第1111104784號，TCP III 8家清單）<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=28237">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=28237</a><span class="sup">支持：BSI Group The Netherlands B.V.（2797）、DQS 此次新增</span></li>
-    <li id="s12"><span class="id">S12</span>食藥署公告 2021-12-30（TCP III 首批6家，111年1月1日施行）<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=27531">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=27531</a><span class="sup">支持：首批6家（無BSI、無SGS）</span></li>
-    <li id="s13"><span class="id">S13</span>衛福部新聞稿 2022-01-01「第三代『臺歐醫療器材技術合作方案(TCP III)』將於111年1月1日起正式施行」<span class="lvl">官方新聞稿</span><a class="url" href="https://mohw.gov.tw/cp-16-64694-1.html">https://mohw.gov.tw/cp-16-64694-1.html</a><span class="sup">支持：4家查核機構全名；93年啟動臺歐TCP、102年TCP II；我國業者可檢附QMS稽查報告向歐盟公告機構申請驗證</span></li>
-    <li id="s14"><span class="id">S14</span>行政院衛生署公告 102年5月1日 署授食字第1021601616號（TCP II；11家歐盟代施查核機構清單）<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=9762">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=9762</a><span class="sup">支持：國內4家代施查核機構（含台灣電子檢驗中心、塑膠中心）；BSI（0086）、SGS United Kingdom Limited（0120）</span></li>
-    <li id="s15"><span class="id">S15</span>食藥署公告 107年7月26日 FDA風字第1070022566號（TCP II 10家歐盟代施查核機構）<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=24237">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=24237</a><span class="sup">支持：2018年名單仍含BSI、SGS UK</span></li>
-    <li id="s16"><span class="id">S16</span>食藥署公告 2021-05-14「第三代臺歐醫療器材技術合作方案(臺歐TCP III)過渡方案」<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=27052">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=27052</a><span class="sup">支持：TCP II 於110年5月25日結束；過渡期至110年12月31日</span></li>
-    <li id="s17"><span class="id">S17</span>食藥署公告 2019-11-21「臺歐TCP III正式申請作業公告」<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=25758">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=25758</a><span class="sup">支持：TCP III 自2019年受理申請</span></li>
-    <li id="s18"><span class="id">S18</span>食藥署公告 115年5月8日 FDA品字第1151102497號「醫療器材商檢查受託機構認證作業程序」<span class="lvl">官方公告</span><a class="url" href="https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=31544">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=31544</a><span class="sup">支持：自公告日受理認證；申請資格；ISO 17021-1／IMDRF；認證3年；投標簽約後始得執行</span></li>
-    <li id="s19"><span class="id">S19</span>行政院衛生署出國報告「赴日本考察醫療器材優良製造規範GMP海外查廠試行作業」（報告日期93年2月18日）<span class="lvl">政府出國報告</span><a class="url" href="https://report.ndc.gov.tw/ReportFront/PageSystem/reportFileDownload/C09300117/001">https://report.ndc.gov.tw/ReportFront/PageSystem/reportFileDownload/C09300117/001</a><span class="sup">支持：88年2月10日實施GMP；當時「三家受託查核機構」名單</span></li>
-    <li id="s20"><span class="id">S20</span>台灣商品檢測驗證中心「商檢中心(ETC)簡介」<span class="lvl">機構自述</span><a class="url" href="https://www.etc.org.tw/about/etc">https://www.etc.org.tw/about/etc</a><span class="sup">支持：1983年以台灣電子檢驗中心成立，2020年更名</span></li>
-    <li id="s21"><span class="id">S21</span>ETC「協施衛生福利部食品藥物管理署醫療器材品質管理系統檢查」<span class="lvl">機構自述</span><a class="url" href="https://www.etc.org.tw/service/detail/373">https://www.etc.org.tw/service/detail/373</a><span class="sup">支持：ETC 協助食藥署 QMS／QSD／GDP 檢查</span></li>
-    <li id="s22"><span class="id">S22</span>ETC「管理系統驗證」<span class="lvl">機構自述</span><a class="url" href="https://www.etc.org.tw/service/detail/427">https://www.etc.org.tw/service/detail/427</a><span class="sup">支持：驗證項目未列 ISO 13485</span></li>
-    <li id="s23"><span class="id">S23</span>TAF「ISO/IEC 17021-1 管理系統驗證機構」方案說明<span class="lvl">認證機構官方說明</span><a class="url" href="https://www.taftw.org.tw/applyCert/field/isoiec17021-1MgtSysVer/">https://www.taftw.org.tw/applyCert/field/isoiec17021-1MgtSysVer/</a><span class="sup">支持：TAF 不提供稽核／驗證服務；現行認證領域未列 ISO 13485</span></li>
-    <li id="s24"><span class="id">S24</span>TAF 認證名錄（管理系統驗證機構）<span class="lvl">認證名錄</span><a class="url" href="https://www.taftw.org.tw/directory/scheme/msv/">https://www.taftw.org.tw/directory/scheme/msv/</a><span class="sup">支持：SGS 台灣 MS001、BSI 臺灣分公司 MS004、金屬中心 MS019、商檢中心 MS020</span></li>
-    <li id="s25"><span class="id">S25</span>財團法人醫藥品查驗中心（CDE）常見問答「申請醫療器材製造許可（QMS/QSD）是否接受與查驗登記平行送審？」（更新2025-11-20）<span class="lvl">CDE 問答</span><a class="url" href="https://www.cde.org.tw/md/1437/2257/12396/42741/">https://www.cde.org.tw/md/1437/2257/12396/42741/</a><span class="sup">支持：QMS 與查驗登記可同時進行，許可證核發前須補齊製造許可</span></li>
-    <li id="s26"><span class="id">S26</span>BSI 台灣「醫療器材」頁<span class="lvl">機構自述</span><a class="url" href="https://www.bsigroup.com/zh-TW/medical-devices/">https://www.bsigroup.com/zh-TW/medical-devices/</a><span class="sup">支持：ISO 13485 驗證機構；歐盟公告機構 2797；英國核准機構 0086</span></li>
-    <li id="s27"><span class="id">S27</span>SGS 台灣「ISO 13485 醫療器材品質管理系統」頁<span class="lvl">機構自述</span><a class="url" href="https://www.sgs.com.tw/service/page/159/2/160-medical-device-solution/544-iso-13485-medical-devices-quality-management-system">https://www.sgs.com.tw/service/page/159/2/160-medical-device-solution/544-iso-13485-medical-devices-quality-management-system</a><span class="sup">支持：SGS 台灣提供 ISO 13485 驗證相關服務說明</span></li>
+    <li id="s01"><span class="id">S01</span>醫療器材管理法<span class="lvl">法規條文</span><span class="url">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030106</span></li>
+    <li id="s02"><span class="id">S02</span>醫療器材品質管理系統檢查及製造許可核發辦法<span class="lvl">法規條文</span><span class="url">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030112</span></li>
+    <li id="s03"><span class="id">S03</span>醫療器材管理事項委託及受託機構認證作業辦法<span class="lvl">法規條文</span><span class="url">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030129</span></li>
+    <li id="s04"><span class="id">S04</span>醫療器材許可證核發與登錄及年度申報準則<span class="lvl">法規條文</span><span class="url">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030128</span></li>
+    <li id="s05"><span class="id">S05</span>醫療器材行政規費收費標準<span class="lvl">法規條文</span><span class="url">https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0030123</span></li>
+    <li id="s06"><span class="id">S06</span>食藥署《國產醫療器材製造業者符合醫療器材品質管理系統準則(QMS)檢查常見問答集》（修訂 115/4/17）<span class="lvl">官方問答集</span><span class="url">https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639122910245395520&amp;type=3&amp;iid=11715</span></li>
+    <li id="s07"><span class="id">S07</span>食藥署《醫療器材國產製造業者符合「醫療器材品質管理系統準則」(QMS)之申請須知》（115/4/17）<span class="lvl">官方須知</span><span class="url">https://www.fda.gov.tw/tc/includes/GetFile.ashx?id=f639122908286089917&amp;type=4</span></li>
+    <li id="s08"><span class="id">S08</span>食藥署「國內醫療器材製造業者品質管理系統(QMS)申請」專頁<span class="lvl">官方網頁</span><span class="url">https://www.fda.gov.tw/Tc/siteContent.aspx?sid=11584</span></li>
+    <li id="s09"><span class="id">S09</span>衛福部公告 113/8/9 衛授食字第1131104830號（含 4 家受託查核機構全名、TCP III 歐盟公告機構名單）<span class="lvl">官方公告</span><span class="url">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=30699</span></li>
+    <li id="s13"><span class="id">S13</span>衛福部新聞稿 2022/1/1「第三代臺歐醫療器材技術合作方案(TCP III)將於 111 年 1 月 1 日起正式施行」<span class="lvl">官方新聞稿</span><span class="url">https://mohw.gov.tw/cp-16-64694-1.html</span></li>
+    <li id="s18"><span class="id">S18</span>食藥署公告 115/5/8 品字第1151102497號「醫療器材商檢查受託機構認證作業程序」<span class="lvl">官方公告</span><span class="url">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=31544</span></li>
+    <li id="s20"><span class="id">S20</span>財團法人台灣商品檢測驗證中心（商檢中心）簡介<span class="lvl">機構自述</span><span class="url">https://www.etc.org.tw/about/etc</span></li>
+    <li id="s23"><span class="id">S23</span>財團法人全國認證基金會（TAF）方案說明<span class="lvl">認證機構說明</span><span class="url">https://www.taftw.org.tw/</span></li>
+    <li id="s24"><span class="id">S24</span>TAF 認證名錄（管理系統驗證機構）<span class="lvl">認證機構名錄</span><span class="url">https://accreditation.taftw.org.tw/</span></li>
+    <li id="s25"><span class="id">S25</span>財團法人醫藥品查驗中心（CDE）法規問答<span class="lvl">法規審查財團法人</span><span class="url">https://regulation.cde.org.tw/</span></li>
   </ol>
 </section>
 
@@ -423,10 +429,9 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
 
 <footer>
   <div class="wrap">
-    <p><b>資料來源：</b>全國法規資料庫、衛生福利部、衛生福利部食品藥物管理署公告與專區文件、公務出國報告資訊網、財團法人醫藥品查驗中心、財團法人全國認證基金會、各機構官方網站（完整 URL 見上方「資料來源」S01–S27）。</p>
-    <p><b>查證日期：</b>2026-10-13</p>
-    <p><b>本頁為法規資訊整理，實際適用以主管機關公告為準。</b>本頁不構成法律意見；機構自述內容以各機構最新公告為準；標示「推測」者為整理者推論。</p>
-    <p class="fine">單檔靜態頁，未載入任何外部字型、樣式、腳本或圖片。</p>
+    <p><b>本頁性質</b>：法規資訊整理，供內部與合作方討論參考。實際適用應以主管機關公告為準。</p>
+    <p><b>查證日期</b>：2026-10-13　<b>主要法源</b>：《醫療器材管理法》及其相關子法（醫療器材品質管理系統檢查及製造許可核發辦法、醫療器材許可證核發與登錄及年度申報準則、醫療器材優良運銷檢查及運銷許可核發辦法、醫療器材行政規費收費標準等）。</p>
+    <p class="fine">所有機構名稱、法規名稱、條號、數字、日期均取自官方一手來源；未以顧問公司、媒體或補習班文章作為結論依據。如對內容有疑義，請逕向主管機關洽詢。</p>
   </div>
 </footer>
 
