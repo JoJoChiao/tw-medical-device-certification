@@ -27,6 +27,7 @@ h1{font-family:var(--serif);font-size:clamp(26px,4.6vw,40px);line-height:1.3;mar
 .tier{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:16px 16px 14px}
 .tier .k{font-size:12px;font-weight:700;letter-spacing:.1em;color:#8fd8c4}
 .tier .nm{font-family:var(--serif);font-size:18px;font-weight:700;color:#fff;margin:4px 0 6px;line-height:1.45}
+.tier .nm small{display:block;font-family:var(--sans);font-size:14px;font-weight:600;color:#dfe5f0;line-height:1.55;margin-top:2px}
 .tier .dt{font-size:13.5px;color:#cfd6e6;line-height:1.6}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:12px}
 .card-num{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:14px 14px 12px}
@@ -103,29 +104,29 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
   <div class="wrap">
     <p class="eyebrow">法規資訊整理 ・ 查證日期 2026-10-13 ・ 依主管機關公告為準</p>
     <h1>台灣醫療器材上市：<br>證照與許可速查表</h1>
-    <p class="lead">一家公司要把一項醫療器材在台灣上市，要拿的<strong>不是一張證，而是三個層次</strong>：公司／場所層的醫療器材商許可執照、品質系統層的醫療器材製造許可、產品層的醫療器材許可證或登錄。而常聽到的 <strong>ISO 13485 是自願性的第三方驗證，不是法定許可</strong>。</p>
+    <p class="lead">一家公司要把一項醫療器材在台灣上市，要拿的<strong>不是一張證，而是三個層次</strong>：公司／場所層的醫療器材商許可執照＋工廠登記、品質系統層的醫療器材製造許可、產品層的醫療器材許可證或登錄。而常聽到的 <strong>ISO 13485 是自願性的第三方驗證，不是法定許可</strong>，不能取代其中任何一項。</p>
 
     <div class="tiers">
       <div class="tier">
         <div class="k">層次 ① 公司／場所</div>
-        <div class="nm">醫療器材商許可執照<br>＋ 工廠登記</div>
-        <div class="dt">由直轄市、縣（市）政府衛生局核發；每一個場所各別辦理</div>
+        <div class="nm">醫療器材商許可執照<small>（製造業或販賣業）＋ 工廠登記</small></div>
+        <div class="dt">許可執照由直轄市、縣（市）政府衛生局核發，工廠登記由直轄市、縣（市）政府辦理；每一個場所各別辦理</div>
       </div>
       <div class="tier">
         <div class="k">層次 ② 品質系統</div>
-        <div class="nm">醫療器材製造許可<br>（通過 QMS 檢查）</div>
-        <div class="dt">由食藥署核發；以製造廠為單位，效期 3 年</div>
+        <div class="nm">醫療器材製造許可<small>（通過「醫療器材品質管理系統準則」檢查，以下簡稱 QMS 檢查）</small></div>
+        <div class="dt">由衛生福利部食品藥物管理署（食藥署）核發；以製造廠為單位，效期 3 年</div>
       </div>
       <div class="tier">
         <div class="k">層次 ③ 產品</div>
-        <div class="nm">醫療器材許可證<br>或 醫療器材登錄</div>
+        <div class="nm">醫療器材許可證<small>（查驗登記）或 醫療器材登錄</small></div>
         <div class="dt">由食藥署核發；以產品為單位，許可證最長 5 年</div>
       </div>
     </div>
 
     <div class="cards">
       <div class="card-num"><div class="n">3 <small>年</small></div><div class="t">醫療器材製造許可（QMS）效期</div></div>
-      <div class="card-num"><div class="n">3 <small>年</small></div><div class="t">醫療器材運銷許可（GDP）效期</div></div>
+      <div class="card-num"><div class="n">3 <small>年</small></div><div class="t">醫療器材運銷許可（醫療器材優良運銷，GDP）效期</div></div>
       <div class="card-num"><div class="n">5 <small>年</small></div><div class="t">醫療器材許可證最長效期</div></div>
       <div class="card-num"><div class="n">4 <small>家</small></div><div class="t">受食藥署委託執行 QMS 稽查的財團法人</div></div>
       <div class="card-num"><div class="n">6萬<small>／</small>3萬</div><div class="t">QMS 檢查規費（標準／精要模式，新臺幣）</div></div>
@@ -185,13 +186,13 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
         </tr>
         <tr>
           <td class="c">5</td><td class="c">品質系統<br>（輸入）</td>
-          <td><b>QSD</b>（國外製造廠品質系統）</td>
+          <td><b>輸入業者醫療器材品質系統文件</b>（Quality System Documentation, QSD）<b>審查</b></td>
           <td><span class="badge diff">國外製造廠</span><br>由代理輸入之醫療器材商申請</td>
           <td>食藥署</td><td>準用 3 年</td><td>必備</td>
         </tr>
         <tr>
           <td class="c">6</td><td class="c">運銷</td>
-          <td><b>醫療器材運銷許可</b>（GDP）</td>
+          <td><b>醫療器材運銷許可</b>（醫療器材優良運銷，GDP）</td>
           <td><span class="badge diff">公司</span><br>以販賣業者為單位；證上載明貯存場所</td>
           <td>食藥署</td><td><b>3 年</b></td><td>公告品項之販賣業者必備</td>
         </tr>
@@ -276,7 +277,7 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
   </div>
 
   <div class="tip">
-    <b>📌 派案方式</b>：官方文件用語是食藥署「<b>派案／分派／指派</b>」，案件也可能直接由食藥署承辦人員執行。法規未提供業者指定受託機構的程序；「隨機」二字在法規中<b>僅用於產品取樣</b>（稽查時取樣為無償且隨機，業者不得指定樣品）。
+    <b>📌 派案方式</b>：官方文件用語是食藥署「<b>派案／分派／指派</b>」，案件也可能直接由食藥署承辦人員執行。本頁檢索的醫材法規與 QMS 官方文件（S01–S04、S06、S07、S18）中，未見業者可指定受託機構的程序；「隨機」二字也只出現在<b>產品取樣</b>（S02 第 8 條：稽查時取樣為無償且隨機，業者不得指定樣品）。
   </div>
 
   <div class="tip">
@@ -372,10 +373,10 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
       <thead><tr><th>問題</th><th>答案</th></tr></thead>
       <tbody>
         <tr><td class="c">製造許可是以什麼為單位？</td><td><b>以「製造廠」為單位核發，一個廠一張。</b></td></tr>
-        <tr><td class="c">證上會寫產品嗎？</td><td>會。製造許可應記載「<b>許可項目及作業內容</b>」。</td></tr>
-        <tr><td class="c">新增產品要重新申請嗎？</td><td>新產品若<b>落在原許可項目範圍內</b> → <b>不必重新申請</b>。</td></tr>
-        <tr><td class="c">超出範圍呢？</td><td>要辦理<b>變更</b>；變更的申請與檢查程序<b>準用新申請的規定</b> → 等於要重新接受檢查。</td></tr>
-        <tr><td class="c">一句話結論</td><td><b>一個廠一張製造許可，但要留意許可項目是否涵蓋新產品。</b></td></tr>
+        <tr><td class="c">證上記載什麼？</td><td>製造許可應記載「<b>許可項目及作業內容</b>」（S02 第 5 條）；核定事項<b>不包括產品清單</b>（S06 Q25）。</td></tr>
+        <tr><td class="c">要新增品項，是再申請一張嗎？</td><td><b>不是另申請一張。</b>新增品項或將原持有之其他製造許可品項整併，須向食藥署辦理「<b>許可項目及作業內容</b>」<b>變更</b>；其申請及檢查程序<b>準用新申請</b>的規定（等於要再接受檢查），核定後<b>不延長原有效期限</b>；若已到展延申請期間（期滿前 6–12 個月），得併同辦理展延。（S06 Q24；S02 第 5 條）</td></tr>
+        <tr><td class="c">作業活動不變、只是產品清單增減呢？</td><td><b>免辦變更</b>，但相關資料須留廠備查。（S06 Q25；該題以申請書須列產品清單之「包裝及貼標」「滅菌」作業為例）</td></tr>
+        <tr><td class="c">一句話結論</td><td><b>一個廠一張製造許可：新增品項走「變更＋檢查」，不是另辦一張；作業活動不變、僅產品清單增減則免辦變更。</b>個案屬於哪一種，以食藥署認定為準。</td></tr>
       </tbody>
     </table>
   </div>
@@ -419,9 +420,11 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
     <li id="s13"><span class="id">S13</span>衛福部新聞稿 2022/1/1「第三代臺歐醫療器材技術合作方案(TCP III)將於 111 年 1 月 1 日起正式施行」<span class="lvl">官方新聞稿</span><span class="url">https://mohw.gov.tw/cp-16-64694-1.html</span></li>
     <li id="s18"><span class="id">S18</span>食藥署公告 115/5/8 品字第1151102497號「醫療器材商檢查受託機構認證作業程序」<span class="lvl">官方公告</span><span class="url">https://www.fda.gov.tw/tc/newsContent.aspx?cid=3&amp;id=31544</span></li>
     <li id="s20"><span class="id">S20</span>財團法人台灣商品檢測驗證中心（商檢中心）簡介<span class="lvl">機構自述</span><span class="url">https://www.etc.org.tw/about/etc</span></li>
-    <li id="s23"><span class="id">S23</span>財團法人全國認證基金會（TAF）方案說明<span class="lvl">認證機構說明</span><span class="url">https://www.taftw.org.tw/</span></li>
-    <li id="s24"><span class="id">S24</span>TAF 認證名錄（管理系統驗證機構）<span class="lvl">認證機構名錄</span><span class="url">https://accreditation.taftw.org.tw/</span></li>
-    <li id="s25"><span class="id">S25</span>財團法人醫藥品查驗中心（CDE）法規問答<span class="lvl">法規審查財團法人</span><span class="url">https://regulation.cde.org.tw/</span></li>
+    <li id="s23"><span class="id">S23</span>財團法人全國認證基金會（TAF）「ISO/IEC 17021-1 管理系統驗證機構」認證方案說明<span class="lvl">認證機構說明</span><span class="url">https://www.taftw.org.tw/applyCert/field/isoiec17021-1MgtSysVer/</span></li>
+    <li id="s24"><span class="id">S24</span>TAF 認證名錄（管理系統驗證機構）<span class="lvl">認證機構名錄</span><span class="url">https://www.taftw.org.tw/directory/scheme/msv/</span></li>
+    <li id="s25"><span class="id">S25</span>財團法人醫藥品查驗中心（CDE）常見問答「申請醫療器材製造許可（QMS/QSD）是否接受與查驗登記平行送審？」（更新 2025-11-20）<span class="lvl">法規審查財團法人</span><span class="url">https://www.cde.org.tw/md/1437/2257/12396/42741/</span></li>
+    <li id="s26"><span class="id">S26</span>BSI 台灣「醫療器材」頁（ISO 13485 驗證服務）<span class="lvl">機構自述</span><span class="url">https://www.bsigroup.com/zh-TW/products-and-services/medical-devices/</span></li>
+    <li id="s27"><span class="id">S27</span>SGS 台灣「ISO 13485 醫療器材品質管理系統」頁<span class="lvl">機構自述</span><span class="url">https://www.sgs.com.tw/service/page/159/2/160-medical-device-solution/544-iso-13485-medical-devices-quality-management-system</span></li>
   </ol>
 </section>
 
@@ -429,7 +432,7 @@ footer .fine{color:#9aa6c0;font-size:13px;margin-top:10px}
 
 <footer>
   <div class="wrap">
-    <p><b>本頁性質</b>：法規資訊整理，供內部與合作方討論參考。實際適用應以主管機關公告為準。</p>
+    <p><b>本表性質</b>：本表為法規資訊整理，實際適用以主管機關公告為準。</p>
     <p><b>查證日期</b>：2026-10-13　<b>主要法源</b>：《醫療器材管理法》及其相關子法（醫療器材品質管理系統檢查及製造許可核發辦法、醫療器材許可證核發與登錄及年度申報準則、醫療器材優良運銷檢查及運銷許可核發辦法、醫療器材行政規費收費標準等）。</p>
     <p class="fine">所有機構名稱、法規名稱、條號、數字、日期均取自官方一手來源；未以顧問公司、媒體或補習班文章作為結論依據。如對內容有疑義，請逕向主管機關洽詢。</p>
   </div>
